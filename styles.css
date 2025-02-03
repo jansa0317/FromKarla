@@ -1,0 +1,185 @@
+/* Estilo general */
+body {
+  font-family: 'Press Start 2P', cursive;
+  background-color: #9bbc88;
+  background-image: url('background.jpg');
+  background-size: cover;
+  color: #4a3f35;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #e0d3b8;
+  border: 9px solid #6b5b45;
+  border-radius: 18px;
+  padding: 18px;
+  max-width: 711px;
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+h1 {
+  font-size: 1.8rem;
+  color: #6b5b45;
+  text-shadow: 1.8px 1.8px 0 #fff;
+}
+
+.message {
+  font-size: 0.9rem;
+  line-height: 1.35;
+  margin: 9px 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 13.5px;
+  border-radius: 9px;
+  border: 1.8px solid #6b5b45;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-top: 18px;
+}
+
+button {
+  padding: 9px 18px;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 4.5px;
+  cursor: pointer;
+  transition: transform 0.18s;
+  font-family: 'Press Start 2P', cursive;
+}
+
+#btnYes {
+  background-color: #8fbc8f;
+  color: white;
+}
+
+#btnNo {
+  background-color: #ff6b6b;
+  color: white;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.hidden {
+  display: none;
+}
+
+.shingeki-img {
+  width: 100%;
+  max-width: 360px;
+  border-radius: 9px;
+  margin: 18px 0;
+  border: 4.5px solid #6b5b45;
+}
+
+.characters {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.character {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  border: 2.7px solid #6b5b45;
+}
+
+.decorations {
+  position: absolute;
+  top: -45px;
+  left: -45px;
+  right: -45px;
+  bottom: -45px;
+  pointer-events: none;
+}
+
+.decoration {
+  position: absolute;
+}
+
+.tree {
+  width: 90px;
+  top: 9px;
+  left: 9px;
+}
+
+.flower {
+  width: 45px;
+  bottom: 9px;
+  right: 9px;
+}
+
+.heart {
+  width: 36px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Media Query para dispositivos móviles */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  .message {
+    font-size: 0.8rem;
+    padding: 12px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+  }
+
+  button {
+    padding: 8px 16px;
+    font-size: 0.8rem;
+  }
+
+  .shingeki-img {
+    max-width: 320px;
+    margin: 15px 0;
+  }
+
+  .characters {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .character {
+    width: 60px;
+    height: 60px;
+  }
+
+  .tree {
+    width: 80px;
+  }
+
+  .flower {
+    width: 40px;
+  }
+
+  .heart {
+    width: 32px;
+  }
+}
